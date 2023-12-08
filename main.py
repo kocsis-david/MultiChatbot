@@ -30,7 +30,7 @@ def main():
         text_splitter = CharacterTextSplitter(
             separator="\n",
             chunk_size=400,
-            chunk_overlap=50,
+            chunk_overlap=10,
             length_function=len
         )
         chunks = text_splitter.split_text(text)
